@@ -6,40 +6,42 @@ using System.Threading.Tasks;
 
 namespace BitCoinCalculator
 {
-    public class BitcoinRate
+    public class BitCoinRates
     {
-     public bpi bpi { get; set; }
+
+        public bpi bpi { get; set; }
+
     }
 
     public class bpi
     {
-     public EUR EUR { get; set; }
+        public EUR EUR { get; set; }
+        public USD USD { get; set; }
+        public GBP GBP { get; set; }
+
     }
+
 
     public class EUR
-
     {
-        internal object code;
-        internal float rate_float;
-
-        public GPI GPI { get; set; }
+        public string code { get; set; }
+        public float rate_float { get; set; }
     }
-    public class GPI
-
-
-
-
-
-
+    public class USD
     {
-
-    public string code { get; set; }
-
-     public float rate_float { get; set; }
-
+        public string code { get; set; }
+        public float rate_float { get; set; }
     }
+    public class GBP
+    {
+        public string code { get; set; }
+        public float rate_float { get; set; }
+    }
+
+
+
+
 
 
 
 }
-
